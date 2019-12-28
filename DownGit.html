@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://minhaskamal.github.io/DownGit/#/home -->
+<html ng-app="downGit" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    
+    <!-------------------------------- META -------------------------------->
+    
+    
+    <meta name="keywords" content="GitHub Directory Link, GitHub Directory, Github Link, GitHub Directory Download, GitHub, Download">
+    <meta name="description" content="Create GitHub Directory Download Link">
+    <meta name="author" content="Minhas Kamal">
+    
+    
+    <title>DownGit</title>
+    <link rel="icon" type="image/ico" href="https://minhaskamal.github.io/DownGit/res/images/downgit.png">
+    
+    
+    <!-------------------------------- LINK -------------------------------->
+    
+    <link href="./DownGit_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="./DownGit_files/angular-toastr(2.0.0).min.css" rel="stylesheet">
+    
+    <link href="./DownGit_files/site.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- ngView: --><div ng-view="" class="ng-scope"><div class="home ng-scope">
+<div class="text-center">
+
+    <div class="vertical-space"></div>
+    <h1><a href="https://minhaskamal.github.io/DownGit">DownGit</a></h1>
+    <div class="center-row"></div>
+    <h4>Create GitHub Resource Download Link</h4>
+    
+    
+    <div class="vertical-space"></div>
+    <div class="col-md-6 center-row">
+        <input name="url" type="url" placeholder="GitHub File or Directory Link" class="form-control ng-pristine ng-valid ng-empty ng-valid-url ng-touched" ng-model="url" ng-keypress="catchEnter($event)">
+    </div>
+    <div class="btn-group center-row">
+        <button type="button" class="btn btn-default" ng-click="createDownLink()">Create Download Link</button>
+        <button type="button" class="btn btn-default" ng-click="download()">Download</button>
+    </div>
+    
+    
+    <div ng-show="isProcessing.val" class="ng-hide">
+        <div class="vertical-space"></div>
+        <img class="processing-img" src="./DownGit_files/processing.gif">
+        <p class="ng-binding">Downloaded 0 of 0 files</p>
+    </div>
+    
+    
+    <div class="col-md-6 center-row ng-hide" ng-show="downUrl">
+        <div class="vertical-space"></div>
+        <textarea class="form-control download-link-box ng-pristine ng-untouched ng-valid ng-empty" ng-model="downUrl"></textarea>
+    </div>
+    
+    <div class="vertical-space"></div>
+    <div class="footer">
+        <a target="_blank" href="https://github.com/MinhasKamal/DownGit">DownGit</a> by <a target="_blank" href="https://github.com/MinhasKamal">Minhas Kamal</a>
+    </div>
+    
+</div>
+</div>
+</div>
+    
+    
+    <!------------------------------- SCRIPT ------------------------------>
+    
+    <script src="./DownGit_files/angular.min.js.下载"></script>
+    <script src="./DownGit_files/angular-route.min.js.下载"></script>
+    <script src="./DownGit_files/jquery-2.2.4.min.js.下载" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="./DownGit_files/bootstrap.min.js.下载" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="./DownGit_files/angular-toastr(2.0.0).tpls.min.js.下载"></script>
+    <script src="./DownGit_files/jszip.min.js.下载"></script>
+    <script src="./DownGit_files/filesaver.min.js.下载"></script>
+
+    <script src="./DownGit_files/app.js.下载"></script>
+    <script src="./DownGit_files/home.js.下载"></script>
+    <script src="./DownGit_files/down-git.js.下载"></script>
+
+</body></html>
