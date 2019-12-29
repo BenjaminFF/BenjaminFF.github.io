@@ -25,7 +25,7 @@
     // Otherwise, leave segmentCount as 0.
     var l = window.location;
     console.log(l.pathname)
-    var segmentCount = 1;
+    var segmentCount = /^post/.test(l.pathname)?1:0;
     l.replace(
       l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
       l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
