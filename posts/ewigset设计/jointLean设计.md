@@ -4,9 +4,8 @@ image: 'https://raw.githubusercontent.com/BenjaminFF/picbed/master/imgs/wide_fig
 description: '大概流程: 初始化卡片，根据每张卡片的学习状态来判断jointLearn的状态。如果有未学习的卡片，就组装一轮卡片（每轮默认有7张卡片）。拆分考虑因素: 拆分速度......'
 tags: ["设计","ewigset"]
 categories: ["ewigset设计"]
+date: 2019-6-15
 ---
-
-toc
 
 ## 大概流程
 初始化卡片，根据每张卡片的学习状态来判断jointLearn的状态。如果有未学习的卡片，就组装一轮卡片（每轮默认有7张卡片）。
