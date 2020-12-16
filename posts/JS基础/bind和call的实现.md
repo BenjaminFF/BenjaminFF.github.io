@@ -44,6 +44,9 @@ foo3.call(obj, 2, 3);
 ```js
 Function.prototype.call2 = function (context, ...args) {
     context = context || window;
+    if (typeof context == 'number') context = new Number(context);
+    if (typeof context == 'boolean') context = new Boolean(context);
+    if (typeof context == 'string') context = new String(context);
     context.fn = this;
     let result = eval('context.fn(' + args + ')');
 
